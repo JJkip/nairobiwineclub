@@ -124,8 +124,9 @@
                                     <div class="custom-form">
                                         <h2>Customize your Premium Wine Club Membership</h2>
                                         <form id="contactform_popup" class="flv_fullwidth">
-                                        <span class="wine-select-list">
-                                            <lable>What assortment would you like to give?</lable>
+                                        <span>
+                                            <label>What assortment would you like to give?</label>
+                                            <div class="wine-select-list">
                                             <input type="radio" name="wine" id="red" class="input-hidden" />
                                             <label for="red" class="mg-lr-md">
                                                 <img src="images/available-options_three-red-wine.png" alt="I'm sad" />
@@ -141,19 +142,55 @@
                                                 <img src="images/available-options_three-mixed-wine.png" alt="I'm happy" />
                                                 <p class="label-text"><b>mixed</b></p>
                                             </label>
+                                            </div>
                                         </span>
-                                        <span>
-                                            <label> When should shipments be delivered?</label>
-                                            <input type="number" name="subject_popup" id="subject_popup" aria-required="true" aria-invalid="false" placeholder="Phone number">
+                                        <!--<span>-->
+                                            <!--<label> When should shipments be delivered?</label>-->
+                                            <!--<select class="form-control">-->
+                                                <!--<option>1</option>-->
+                                                <!--<option>2</option>-->
+                                                <!--<option>3</option>-->
+                                                <!--<option>4</option>-->
+                                                <!--<option>5</option>-->
+                                            <!--</select>-->
+                                        <!--</span>-->
+                                            <span>
+                                            <label> How often should shipments be delivered?</label>
+                                            <select id="delivery-schedule">
+                                                <option value="monthly" rel="icon-temperature">Monthly</option>
+                                                <option value="skipmonth">Every other month</option>
+                                                <option value="quaterly">Quaterly(every three months)</option>
+                                            </select>
+
                                         </span>
                                             <span>
-                                                <label>Charge my Credit Card</label>
-                                                <input class="btn-wine btn_md" type="button" value="Register" id="submit_popup" onclick="return check_values_popup();">
+                                                <label>Payment option</label>
+                                                <div>
+                                                    <label>
+                                                        <input type="radio" class="option-input radio" name="membership" />
+                                                        mPesa
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" class="option-input radio" name="membership" />
+                                                        Credit/Debit card
+                                                    </label>
+                                                </div>
                                             </span>
                                             <span>
                                                 <label>Is this a new membership?</label>
-                                                <input class="btn-wine btn_md" type="button" value="Register" id="submit_popup" onclick="return check_values_popup();">
+                                                <div>
+                                                    <label>
+                                                        <input type="radio" class="option-input radio" name="membership" />
+                                                        New Membership
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" class="option-input radio" name="membership" />
+                                                        Renewal
+                                                    </label>
+                                                </div>
+
                                             </span>
+                                            <span><button>Subscribe</button></span>
                                         </form>
                                     </div>
                                 </div>
