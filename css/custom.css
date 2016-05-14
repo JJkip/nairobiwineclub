@@ -565,7 +565,7 @@ ul.select-options li {
     margin-right: 0.5rem;
     outline: none;
     position: relative;
-    z-index: 1000;
+    /*z-index: 1000;*/
 }
 .option-input:hover {
     background: #9faab7;
